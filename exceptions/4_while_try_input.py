@@ -8,7 +8,7 @@ def get_age():
             # return int(input("Please enter your age: "))
         except ValueError:
             print("That is not a number. Please try again.")
-        # calculate(age) # Can't have somethin after the except: to utilize the while-True retry.
+        # calculate(age) # Can't have somethin after the except: to utilize the while-True retry. OR use `continue` statement.
 
 
 def main():
