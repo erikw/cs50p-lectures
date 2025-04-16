@@ -35,7 +35,7 @@ F |  T
 T |  F
 
 
-# Associativity and precedance
+# Associativity and precedence
 Ref: https://www.programiz.com/python-programming/precedence-associativity
 The operators bind from hard to low: not, and, or
 Similar to math:
@@ -45,4 +45,16 @@ X or Y and Z => X or (Y or Z)
 not X and Y  => (not X) and Y
 X and not Y or Z  => (X and (not Y)) or Z
 
+
+# Invert an boolean expression
+a.k.a. De Morgan's laws
+
+Similar to math:
+-1 * (5 + 2) == -5 - 2
+-1 * (5 - 2) == -5 + 2
+
+
+not (X and Y) == not X or not Y
+not (X or Y) == not X and not Y
+not (not X or Y) == X and not Y
 """
