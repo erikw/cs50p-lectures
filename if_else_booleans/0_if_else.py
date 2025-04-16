@@ -2,7 +2,7 @@
 Draw on whiteboard.
 """
 
-#  Explain that as sooon as soon one condition is true, no other is tried.
+#  Explain that as soon as soon one condition is true, no other is tried.
 x = 5
 y = 10
 if  x > y:
