@@ -1,7 +1,7 @@
 """
 Draw on whiteboard.
 
-# Truth table
+# Truth tables
 Two expressions:
 X := name.islower()
 Y := d > 5
