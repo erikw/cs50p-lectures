@@ -35,6 +35,12 @@ F |  T
 T |  F
 
 
+
+# Short-circuit 
+X or Y # If X is True, Y is not even considered. 
+
+
+
 # Associativity and precedence
 Ref: https://www.programiz.com/python-programming/precedence-associativity
 The operators bind from hard to low: not, and, or
