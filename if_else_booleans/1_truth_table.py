@@ -29,7 +29,7 @@ F | T | T
 T | T | T
 
 
-X |  not C
+X |  not X
 -----------
 F |  T
 T |  F
