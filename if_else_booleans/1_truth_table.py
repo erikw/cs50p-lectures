@@ -11,8 +11,8 @@ if X or Y:
 if not X or Y:
 etc.
 
-    and
-X | Y | Result
+
+X | Y | X and Y
 --------------
 F | F | F
 T | F | F
@@ -20,16 +20,16 @@ F | T | F
 T | T | T
 
 
-    or
-X | Y | Result
+
+X | Y | X or Y
 --------------
 F | F | F
 T | F | T
 F | T | T
 T | T | T
 
- not
-X |  Result
+
+X |  not C
 -----------
 F |  T
 T |  F
