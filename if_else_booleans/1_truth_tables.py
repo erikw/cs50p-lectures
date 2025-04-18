@@ -43,12 +43,18 @@ X or Y # If X is True, Y is not even considered.
 
 # Associativity and precedence
 Ref: https://www.programiz.com/python-programming/precedence-associativity
-The operators bind from hard to low: not, and, or
+
+The operators binds in this order:
+harder -> looser
+not, and, or
+
+
 Similar to math:
 5 + 2 * 3  => 5 + (2 * 3)
 
-X or Y and Z => X or (Y or Z)
-not X and Y  => (not X) and Y
+
+X or Y and Z      => X or (Y or Z)
+not X and Y       => (not X) and Y
 X and not Y or Z  => (X and (not Y)) or Z
 
 
@@ -60,7 +66,7 @@ Similar to math:
 -1 * (5 - 2) == -5 + 2
 
 
-not (X and Y) == not X or not Y
-not (X or Y) == not X and not Y
+not (X and Y)    == not X or not Y
+not (X or Y)     == not X and not Y
 not (not X or Y) == X and not Y
 """
