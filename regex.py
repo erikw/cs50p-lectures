@@ -2,6 +2,16 @@
 import re
 
 
+# Why regex?
+# * String matching for validation
+# *String search & extraction
+# string modification (replace, split)
+# tip = input("Enter tip percentage: ")
+tip = "15%"
+if re.match("\d{1,2}%", tip):
+  print("Valid tip")
+
+
 # Basic patterns
 assert re.match(r"A", "A")
 assert re.match(r"AB", "AB")
