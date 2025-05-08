@@ -124,12 +124,12 @@ assert re.match(r"""
 
 
 # Remember complicated Vanity Plates? It can be solved very easily with regex.
-# https://regex101.com/r/akCSQ5/1 (log in with GitHub first)
+# https://regex101.com/r/akCSQ5 (log in with GitHub first)
 def is_valid(plate):
     return re.match(r"(?=.{2,6}$)[a-z]{2,}([1-9]\d*)?$", plate, re.I)
 
 # plate = input("Plate: ")
-plate = "cs05"
+plate = "cs50"
 print("Valid" if is_valid(plate) else "Invalid")
 
 
@@ -141,5 +141,5 @@ print("Valid" if is_valid(plate) else "Invalid")
 # approach problem https://cs50.harvard.edu/python/2022/psets/7/numb3rs/
 #
 # See regex101 tests (log in with my Github account before clicking private URL):
-# * https://regex101.com/r/ScuZVQ/5
-# * https://regex101.com/r/PaeWpJ/1
+# * https://regex101.com/r/ScuZVQ
+# * https://regex101.com/r/PaeWpJ
