@@ -5,7 +5,7 @@ import re
 # Why regex?
 # * String matching for validation
 # *String search & extraction
-# string modification (replace, split)
+# * string modification (replace, split)
 # tip = input("Enter tip percentage: ")
 tip = "15%"
 if re.match(r"\d{1,2}%", tip):
