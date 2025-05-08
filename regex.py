@@ -123,7 +123,8 @@ assert re.match(r"""
 
 
 
-# Remember complicated Vanity Plates? It can be solved very easily with regex:
+# Remember complicated Vanity Plates? It can be solved very easily with regex.
+# https://regex101.com/r/akCSQ5/1 (log in with GitHub first)
 def is_valid(plate):
     return re.match(r"(?=.{2,6}$)[a-z]{2,}([1-9]\d*)?", plate, re.I)
 
