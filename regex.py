@@ -8,7 +8,7 @@ import re
 # string modification (replace, split)
 # tip = input("Enter tip percentage: ")
 tip = "15%"
-if re.match("\d{1,2}%", tip):
+if re.match(r"\d{1,2}%", tip):
   print("Valid tip")
 
 
