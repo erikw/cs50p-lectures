@@ -1,3 +1,4 @@
+# Extra lecture to clarify https://cs50.harvard.edu/python/2022/weeks/7/
 import re
 
 
