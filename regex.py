@@ -63,10 +63,10 @@ assert re.match(r"A|B", "B")
 assert re.match(r"A1|2B", "A1")
 assert re.match(r"A(1|2)B", "A2B")
 assert re.match(r"(AB|CD)", "CD")
-assert re.match(r"(A|B)|(C|D)", "AC")
-assert re.match(r"(A|B)|(C|D)", "AD")
-assert re.match(r"(A|B)|(C|D)", "BC")
-assert re.match(r"(A|B)|(C|D)", "BD")
+assert re.match(r"(A|B)|(C|D)", "A")
+assert re.match(r"(A|B)|(C|D)", "B")
+assert re.match(r"(A|B)|(C|D)", "C")
+assert re.match(r"(A|B)|(C|D)", "D")
 assert re.match(r"(1|2)*3", "23")
 assert re.match(r"(1|2)*3", "211112211111113")
 
@@ -126,10 +126,15 @@ assert re.match(r"""
 # Remember complicated Vanity Plates? It can be solved very easily with regex.
 # https://regex101.com/r/akCSQ5/1 (log in with GitHub first)
 def is_valid(plate):
-    return re.match(r"(?=.{2,6}$)[a-z]{2,}([1-9]\d*)?", plate, re.I)
+    return re.match(r"(?=.{2,6}$)[a-z]{2,}([1-9]\d*)?$", plate, re.I)
 
-plate = "cs50"
+# plate = input("Plate: ")
+plate = "cs05"
 print("Valid" if is_valid(plate) else "Invalid")
+
+
+# or the whole plates in just one line:
+# print("Valid" if re.match(r"(?=.{2,6}$)[a-z]{2,}([1-9]\d*)?$", input("Plate: "), re.I) else "Invalid")
 
 
 # Showcase on whiteboard + regex101.com on essentials to understand how to
