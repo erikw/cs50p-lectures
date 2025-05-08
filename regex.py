@@ -125,7 +125,7 @@ assert re.match(r"""
 
 # Remember complicated Vanity Plates? It can be solved very easily with regex:
 def is_valid(plate):
-    return re.match(r"(?=.{2,6}$)[a-z]{2,}([1-9]\d*)?$", plate, re.I)
+    return re.match(r"(?=.{2,6}$)[a-z]{2,}([1-9]\d*)?", plate, re.I)
 
 plate = "cs50"
 print("Valid" if is_valid(plate) else "Invalid")
